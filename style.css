@@ -1,0 +1,400 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightyellow;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .colapsed{
+    display: none;
+  }
+
+nav{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+
+nav .mobile{
+    display: none;
+}
+nav .mobile .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+nav .mobile .header .more button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background-color: #eaff00;
+    color: black;
+    font-size: 9px;
+    margin-left: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    border-radius: 30px;
+}
+
+nav a:hover{
+    color: black;
+    background-color: #eaff00;
+}
+
+nav .desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pad: 0 20px;
+    height: 90px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+    display: flex;
+}
+
+nav .desktop .secondary.mini{
+    display: none;
+}
+
+.search-bar{
+    border: solid 1px lightyellow;
+    width: 500px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 100px auto;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus-within{
+    border: solid 2px lightyellow;
+    box-shadow: 0 2px 12px rgb(235, 235, 150) ;
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    flex: 1;
+    font-size: 18px;
+}
+
+.search-bar .actions{
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar .actions button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: lightyellow;
+
+    transition: color 0.3s ease-in-out;
+}
+.search-bar .actions button:hover{
+    color: #ef770e;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 90%;
+    
+    border: solid 2px black;
+}
+
+.form-container .login-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-container .login-container > h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container > span{
+    text-align: center;
+    color: lightslategray;
+}
+
+.form-container .login-container label{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+    color: lightslategray;
+    text-align: left;
+}
+
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px lightslategray;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+.form-container .login-container input.input:focus{
+    outline: solid 2px yellow;
+}
+
+.form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.form-container a{
+    color: #91912f;
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: none;
+}
+.form-container a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn.btn-login{
+    background-color: black;
+    color: white;
+}
+.btn.btn-login:hover{
+    background-color: #ffff00a5;
+    color: black;
+    border: solid 1px black;
+}
+
+.btn.btn-facebook{
+    background-color: #0048ffdd;
+    color: white;
+}
+.btn.btn-facebook:hover{
+    background-color: #0132afdd;
+}
+
+.btn.btn-twitter{
+    background-color: #44c7ff;
+    color: white;
+}
+.btn.btn-twitter:hover{
+    background-color: #34a5d6;
+}
+
+.btn.btn-google{
+    background-color: white;
+    border: solid 1px  lightslategray;
+    margin-top: 15px;
+}
+.btn.btn-google:hover{
+    background-color: rgb(218, 215, 215);
+}
+
+.form-container .welcome-screen-container{
+    background-image:linear-gradient(to bottom, #cad52ba3 25%, #101501 100%), url(job_team.jpeg);
+    height: 1000px;
+    width: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.form-container .welcome-screen-container h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    
+}
+
+@media  screen and (max-width: 1300px){
+    nav .logo{
+        margin-right: 10px;
+     }
+    .form-container .login-container input.input{
+        display: block;
+        width: 70%;
+        box-sizing: border-box;
+        padding: 10px;
+        border: solid 1px lightslategray;
+        border-radius: 30px;
+        margin-left: 20px;
+    }
+    .form-container .login-container label{
+       margin-left: 20px;
+    }
+    .btn{
+        width: 70%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    nav .logo {
+        min-width: 100px;
+    }
+
+    nav .secondary.full{
+        display: none;
+    }
+   
+    nav .secondary.mini{
+        display: block !important;
+    }
+   
+    nav .secondary.mini .submenu{
+        background-color: black;
+        position: absolute;
+        display: none;
+        width: 200px;
+        right: 0;
+    }
+   
+    nav .secondary.mini:hover .submenu{
+        display: block;
+    }
+    nav .logo{
+       display: none;
+    }
+
+    .search-bar{
+        width: 300px;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .search-bar input{
+        width: 200px;
+    }
+    .form-container .welcome-screen-container{
+        display: none;
+     }
+     .btn{
+        width: 70%;
+        margin: 10px auto;
+    }
+     
+}
+
+@media screen and (max-width: 500px){
+    nav .desktop{
+        display: none;
+    }
+
+    nav .mobile {
+        display: block;
+    }
+    nav .logo{
+        display: none;
+     }
+    .search-bar{
+       width: 300px;
+       height: 38px;
+       margin: auto;
+       transition: all 0.3s ease-in-out;
+    }
+    .search-bar input{
+        width: 200px;
+        height: 20px;
+    }
+    
+    .form-container .welcome-screen-container{
+       display: none;
+    }
+    .form-container a{
+        font-size: 12px;
+        margin-right: 30px;
+    }
+
+    .form-container .login-container .options {
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    .form-container .login-container input.input{
+        height: 30px;
+    }
+    .btn{
+        width: 50%;
+        height: 50px;
+        margin: 10px auto;
+        align-items: center;
+    }
+    .providers span{
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 45px;
+    }
+
+}
