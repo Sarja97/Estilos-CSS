@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styles</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -91,50 +93,54 @@
             links.classList.toggle('colapsed')
         });
     </script>
-     <section class="form-container">
-        <div class="login-container">
-            <h2>Welcome</h2>
-            <p>Enter your user and password.</p>
-
-            <form action="">
-                <p>
-                    <label for="username">Username</label>
-                    <input class="input" type="text" name="username" id="username">
-                </p>
-                <p>
-                    <label for="password">Password</label>
-                    <input class="input" type="password" name="password" id="password">
-                </p>
-                <div class="options">
-                   <div>
-                       Remember me 
-                      <input type="checkbox" name="rememberme" id="rememberme"/>
-                   </div>
-                   <div>
-                      <a href="#">I forgot my password</a>
-                   </div>
-                </div>
-                
-
-                <p>
-                    <input type="submit" class="btn btn-login" value="Log in"/>
-                </p>
-
-                <div class="providers">
-                    <span>Choose another method to authenticate</span>
-                    <button class="btn btn-google">Google</button>
-                    <button class="btn btn-facebook">Facebook</button>
-                    <button class="btn btn-twitter">Twitter</button>
-                </div>
-            </form>
+     <section class="form-section">
+        <h1>Sign up and start enjoying the benefits of our company!</h1>
+        <div class="form-container">
+            <div class="login-container">
+                <h2>Welcome</h2>
+                <p>Enter your user and password.</p>
+    
+                <form action="">
+                    <p>
+                        <label for="username">Username</label>
+                        <input class="input" type="text" name="username" id="username">
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input class="input" type="password" name="password" id="password">
+                    </p>
+                    <div class="options">
+                       <div>
+                           Remember me 
+                          <input type="checkbox" name="rememberme" id="rememberme"/>
+                       </div>
+                       <div>
+                          <a href="#">I forgot my password</a>
+                       </div>
+                    </div>
+                    
+    
+                    <p>
+                        <input type="submit" class="btn btn-login" value="Log in"/>
+                    </p>
+    
+                    <div class="providers">
+                        <span>Choose another method to authenticate</span>
+                        <button class="btn btn-google">Google</button>
+                        <button class="btn btn-facebook">Facebook</button>
+                        <button class="btn btn-twitter">Twitter</button>
+                    </div>
+                </form>
+            </div>
+            <div class="welcome-screen-container">
+                <h1>Welcome.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum odit, ipsa ullam accusamus minima ex, alias fugiat facilis incidunt impedit dolores voluptate quasi quis laudantium quia maxime mollitia fugit minus id doloribus amet excepturi. Esse ducimus sequi hic nihil sapiente.</p>
+            </div>
         </div>
-        <div class="welcome-screen-container">
-            <h1>Welcome.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum odit, ipsa ullam accusamus minima ex, alias fugiat facilis incidunt impedit dolores voluptate quasi quis laudantium quia maxime mollitia fugit minus id doloribus amet excepturi. Esse ducimus sequi hic nihil sapiente.</p>
-        </div>
-    </section>
+     </section>
     <section class= "table-example">
         <h2>Our table example.</h2>
+        <p>This is the list of clients who have chosen us this month and are already enjoying its benefits. You could be here if you believe in us</p>
         <table>
             <caption>Clients</caption>
             <thead>
@@ -421,6 +427,7 @@
     </section>
     <section class="card-section">
         <h2>Our Employees</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempora quis architecto? Voluptates commodi quia minima. Modi quo consequatur sint non vitae quaerat iure porro, est corrupti velit, soluta maiores.</p>
         <div class="cards">
             <div class="card">
                 <div class="header">
@@ -482,6 +489,45 @@
                             <img src="avatar3.png" alt="">
                             <span>Justin Miller</span>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="founders">
+        <h1>Company Founders</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam tempora officiis neque commodi tenetur, soluta, alias cumque aut voluptatum, voluptatem accusantium id aperiam rerum quam sint quasi tempore? Numquam ullam voluptatibus magnam accusantium distinctio nostrum modi odio magni enim? Consequatur!</p>
+        <div class="cards-founders">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="card1.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Anna Smith</h3>
+                        <p>Expert Ux/Ui designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="card2.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Mike Southside</h3>
+                        <p>JavaScript developer. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="card3.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Lina Laurens</h3>
+                        <p>Python developer.</p>
                     </div>
                 </div>
             </div>
