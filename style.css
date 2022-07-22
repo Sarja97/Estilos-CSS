@@ -295,6 +295,7 @@ table{
     border-collapse: 0;
     width: 800px;
     margin: 100px auto;
+    margin-bottom: 50px;
 }
 
 td, th{
@@ -322,7 +323,81 @@ thead{
     top: 0;
 }
 
+.card-section h2{
+    font-size: 40px;
+    color: lightyellow;
+    text-align: center;
+    text-decoration: wavy;
+}
 
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.cards .card{
+    background: #eaff00;
+    color: black;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2), -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card a{
+    color: #2f2360;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cards .card a:hover{
+    color: rgb(252, 12, 12)
+}
+
+.cards .card .header{
+    flex: 1;
+}
+
+.cards .card:hover{
+    margin-right: 80px;
+    transform: rotate(3deg) translateY(-15px);
+}
+
+.cards .card .header{
+    padding: 10px 0;
+}
+.cards .card .header .title{
+    font-size: 28px;
+}
+
+.cards .card[class*="element"]{
+    margin-left: -100px;
+}
+
+.elemento-1:hover,
+.elemento-2:hover{
+    margin-left: -130px;
+}
+
+
+.cards .card .footer .autor a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cards .card .footer img{
+    width: 50px;
+    border-radius: 50%;
+}
 
 @media  screen and (max-width: 1300px){
     nav .logo{
@@ -389,7 +464,24 @@ thead{
         width: 70%;
         margin: 10px auto;
     }
-     
+    table{
+        border-spacing: 0;
+        border-collapse: 0;
+        width: 400px;
+        margin: 100px auto;
+        font-size: 14px;
+    }
+    .cards .card{
+        width: 150px;
+        height: 250px;
+    }
+    .cards .card:hover{
+        margin-right: 80px;
+        transform: rotate(12deg) translateY(-20px);
+    }
+    .card a{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 500px){
