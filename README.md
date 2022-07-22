@@ -1,2 +1,2 @@
 # Estilos-CSS
-Interfaz Web con formulaario, tabla y Animaciones en CSS
+Interfaz Web con formulario, tabla y Animaciones en CSS
